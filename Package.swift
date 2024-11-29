@@ -6,7 +6,10 @@ import PackageDescription
 let package = Package(
     name: "SwiftTryCatch",
     platforms: [
-        .iOS(.v11)
+		.macOS(.v10_13),
+		.iOS(.v12),
+		.tvOS(.v12),
+		.watchOS(.v4)
     ],
     products: [
         .library(name: "SwiftTryCatch", targets: ["SwiftTryCatch"]),
